@@ -1,0 +1,106 @@
+.hidden {
+  display: none !important;
+}
+
+.loading-transaction {
+  animation: flicker 0.75s alternate infinite;
+  -moz-animation: flicker 0.75s alternate infinite;
+  -webkit-animation: flicker 0.75s alternate infinite;
+}
+
+#transaction-status {
+  cursor: pointer;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes flicker {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes flicker {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#possibilities-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0.01618rem solid #eff6f8;
+  border-radius: 4px;
+  background-color: #111212;
+  z-index: 10;
+  padding: 11px 25px;
+}
+
+#possibilities-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#possibilities-iframe {
+  width: 50vh;
+  height: 50vh;
+}
+
+#close-possibilities {
+  width: 7.5%;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  fill: white;
+}
+
+#close-possibilities:hover {
+  cursor: pointer;
+  fill: #ac0090;
+  -webkit-transform: scale(1.01618);
+  -ms-transform: scale(1.01618);
+  transform: scale(1.01618);
+}
+
+.hide-on-desktop {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  #close-possibilities {
+    width: 10%;
+  }
+
+  .hide-on-desktop {
+    display: block;
+  }
+
+  #possibilities-iframe {
+    width: 75vw;
+    height: 75vw;
+  }
+}

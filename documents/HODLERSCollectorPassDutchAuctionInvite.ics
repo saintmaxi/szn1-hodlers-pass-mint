@@ -1,0 +1,77 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HODLERS Events and Releases
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:HODLERS public events calendar
+BEGIN:VEVENT
+DTSTART:20230426T160000Z
+DTEND:20230426T170000Z
+DTSTAMP:20230411T235025Z
+UID:3nqhm8t8vqf3culhli31r71uph@google.com
+CREATED:20230411T234128Z
+DESCRIPTION:<p dir="ltr">A collective driven by decentralized curation and 
+ research.</p><p dir="ltr">SZN 1 of the Collector Pass\, featuring Isotopia 
+ designed by HIDEO. The membership is valid from 1/5/2023 to 1/5/2025</p><p 
+ dir="ltr">Exclusive perks include: </p><p dir="ltr">• Early access to our f
+ uture releases </p><p dir="ltr">• Access to decentralized curation </p><p d
+ ir="ltr">• Access to a private community </p><p dir="ltr">• Access to resea
+ rch content </p><p dir="ltr">• Entry to giveaways</p><p dir="ltr">Isotopia:
+  A Living Canvas of Time and Space</p><p dir="ltr">The Isotopia art collect
+ ion is a wondrous blend of isometric perspective and utopian landscapes\, c
+ onstructing a world where mathematical precision and abstract visions conve
+ rge. Each piece in the collection forms a unique and exact realm\, inviting
+  the viewer to embark on an exploratory journey of curiosity and creativity
+ .</p><p dir="ltr">At the heart of each Isotopia lies the emblematic letter 
+ H\, honoring the HODLERS collective and the community that binds us togethe
+ r. Every artwork in the collection is an on-chain\, living entity that evol
+ ves with the passage of time\, revealing 24 enchanting designs correspondin
+ g to each hour of the day.</p><p dir="ltr">As moments unfold\, new designs 
+ gracefully build upon the previous ones\, echoing the essence of blockchain
+  technologies and HODLing culture within the crypto space. This dynamic evo
+ lution celebrates the power of community and innovation\, where individual 
+ blocks amalgamate to form a harmonious whole that surpasses the sum of its 
+ parts.</p>
+LAST-MODIFIED:20230411T234128Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Public DA: Collector Pass SZN 1: Isotopia by HIDΞO
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230426T170000Z
+DTEND:20230427T170000Z
+DTSTAMP:20230411T235025Z
+UID:7mhe90m4bmr4auegkibgis08mc@google.com
+CREATED:20230411T234158Z
+DESCRIPTION:<p dir="ltr">A collective driven by decentralized curation and 
+ research.</p><p dir="ltr">SZN 1 of the Collector Pass\, featuring Isotopia 
+ designed by HIDEO. The membership is valid from 1/5/2023 to 1/5/2025</p><p 
+ dir="ltr">Exclusive perks include: </p><p dir="ltr">• Early access to our f
+ uture releases </p><p dir="ltr">• Access to decentralized curation </p><p d
+ ir="ltr">• Access to a private community </p><p dir="ltr">• Access to resea
+ rch content </p><p dir="ltr">• Entry to giveaways</p><p dir="ltr">Isotopia:
+  A Living Canvas of Time and Space</p><p dir="ltr">The Isotopia art collect
+ ion is a wondrous blend of isometric perspective and utopian landscapes\, c
+ onstructing a world where mathematical precision and abstract visions conve
+ rge. Each piece in the collection forms a unique and exact realm\, inviting
+  the viewer to embark on an exploratory journey of curiosity and creativity
+ .</p><p dir="ltr">At the heart of each Isotopia lies the emblematic letter 
+ H\, honoring the HODLERS collective and the community that binds us togethe
+ r. Every artwork in the collection is an on-chain\, living entity that evol
+ ves with the passage of time\, revealing 24 enchanting designs correspondin
+ g to each hour of the day.</p><p dir="ltr">As moments unfold\, new designs 
+ gracefully build upon the previous ones\, echoing the essence of blockchain
+  technologies and HODLing culture within the crypto space. This dynamic evo
+ lution celebrates the power of community and innovation\, where individual 
+ blocks amalgamate to form a harmonious whole that surpasses the sum of its 
+ parts.</p>
+LAST-MODIFIED:20230411T234230Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Allowlist: Collector Pass SZN 1: Isotopia by HIDΞO
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
