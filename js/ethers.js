@@ -2297,15 +2297,24 @@ const setUpWeb3Modal = async () => {
     // 1. Define constants
     const projectId = '24652b654a6a5c60a8bff193f2b2de71';
     const chains = mainnet ? [window["wagmi"].chains.mainnet] : [window["wagmi"].chains.goerli];
-    const walletConnectProvider = window["w3m"].walletConnectProvider;
+    const w3mProvider = window["w3m"].w3mProvider;
 
     // 2. Configure wagmi client
-    const { provider } = window["wagmi"].configureChains(chains, [walletConnectProvider({ projectId })]);
-    const wagmiClient = window["wagmi"].createClient({
-        autoConnect: true,
-        connectors: [...window["w3m"].modalConnectors({ appName: 'web3Modal', chains })],
-        provider
-    });
+    const { provider } = window["wagmi"].configureChains(chains, [w3mProvider({ projectId })]);
+    const wagmiConfig = window["wagmi"].createClient({
+      autoConnect: true,
+      connectors: [
+          ...window["w3m"].w3mConnectors({ projectId, version: 2, chains }),
+          new window["wagmi"].CoinbaseWalletConnector({
+              chains,
+              options: {
+                  appName: "Collector Pass | HODLERS",
+                  appLogoUrl: "https://szn1.hodlers.one/images/HODLERS-LOGO-Independent.svg",
+              },
+          }),
+      ],
+      provider
+  });
 
     web3provider = window["wagmi"].getProvider();
 
@@ -2320,18 +2329,27 @@ const setUpWeb3Modal = async () => {
     }
 
     // 3. Create ethereum and modal clients
-    const ethereumClient = new window["w3m"].EthereumClient(wagmiClient, chains);
+    const ethereumClient = new window["w3m"].EthereumClient(wagmiConfig, chains);
     web3Modal = new window["w3m"].Web3Modal(
         {
-            projectId
+            projectId,
+            themeVariables: {
+                "--w3m-background-color": "#141414",
+                "--w3m-accent-color": "#E50A9A",
+                "--w3m-logo-image-url": "https://szn1.hodlers.one/images/HODLERS-LOGO-Independent.svg",
+                "--w3m-font-family": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+            },
+            walletImages: {
+                // Coinbase Wallet Image
+                coinbaseWallet: 'https://szn1.hodlers.one/images/coinbase-wallet.png',
+            },
+            defaultChain: mainnet
         },
         ethereumClient
     );
 
     web3Modal.setTheme({
         themeMode: "dark",
-        themeColor: "blackWhite",
-        themeBackground: "gradient",
     });
 };
 
